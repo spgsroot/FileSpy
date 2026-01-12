@@ -33,7 +33,7 @@ You will need kernel headers and the BCC toolkit:
 ```bash
 sudo apt-get update
 sudo apt-get install bpfcc-tools linux-headers-$(uname -r) python3-bpfcc
-
+```
 ### 2. Run
 ```
 # Root privileges are required to interact with eBPF
