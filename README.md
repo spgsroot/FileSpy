@@ -35,14 +35,14 @@ sudo apt-get update
 sudo apt-get install bpfcc-tools linux-headers-$(uname -r) python3-bpfcc
 ```
 ### 2. Run
-```
+```bash
 # Root privileges are required to interact with eBPF
 sudo python3 main.py
 ```
 
 ### Example Output
 The tool generates a stream of JSON events for every write to the target files:
-```
+```json
 {
   "id": "a4d958fc-8b33-40e3-8e7a-f96ddc98cd05",
   "timestamp": "2026-01-12T20:38:42.880979",
@@ -62,9 +62,9 @@ The tool generates a stream of JSON events for every write to the target files:
 }
 ```
 
-##№ FAQ
+### FAQ
 ERROR: Unable to find kernel headers on WSL
-```
+```bash
 uname -r 
 sudo ln -sf /home/usr/WSL2-Linux-Kernel /lib/modules/$(uname -r)/build
 ```
